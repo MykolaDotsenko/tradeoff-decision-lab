@@ -285,7 +285,10 @@ async function fromOpenRouter(spec, requestSignal) {
         model: OPENROUTER_MODEL,
         temperature: 0.2,
         messages: [
-          { role: 'system', content: `${spec.system} Return only valid JSON matching this schema: ${JSON.stringify(spec.schema)}` },
+          {
+            role: 'system',
+            content: `${spec.system} Return only valid JSON matching this schema: ${JSON.stringify(spec.schema)}`
+          },
           { role: 'user', content: spec.user }
         ],
         response_format: { type: 'json_object' }
