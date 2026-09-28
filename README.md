@@ -185,7 +185,7 @@ Never expose provider secrets through a `VITE_` variable.
 ```bash
 npm run check
 npm run test:e2e
-npm run smoke:deployment -- https://your-project.vercel.app
+npm run smoke:deployment -- https://tradeoff-decision-lab.vercel.app
 ```
 
 CI uses the committed lockfile and runs formatting, linting, type checking, unit tests, production build, Playwright journeys and axe analysis.
